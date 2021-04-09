@@ -12,7 +12,7 @@ $fuenteLetra: 'Roboto', sans-serif;
 body{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 12vh auto auto auto auto 35vh 3vh;
+    grid-template-rows: 12vh min(85vh) auto auto auto auto 3vh;
 }
 .header{
     background-color: $colorPrimario;
@@ -130,8 +130,9 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     background-color: $colorTerciario;
-    position: absolute;
+    position: relative;
     width: 100%;
+    
 
     a{
         text-decoration: none;
@@ -205,6 +206,26 @@ body{
     }  
 }
 
+.error404{
+
+    display:flex;
+    flex-flow: column nowrap;
+    padding: 2vh;
+    justify-content: space-around;
+    align-items: center;
+
+    img{
+        width: 15%;
+        transition: all 5s;
+        &:hover{
+            transform: rotate3d(360);
+        }
+    }
+    p{
+        font: $fuenteLetra;
+        color: $rojoViejo;
+    }
+}
 
 /*estilo sin modificar*/
 

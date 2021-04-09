@@ -5,16 +5,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Emergente</title>
-		<link rel="stylesheet" href="css/estilo.css">
+		<meta name="description" content="Servicio integral de redes para PYMEs. ">
+		<meta name="keywords" content="emergente, networking, redes, cableado estructurado, servidores, san rafael, mendoza">
+		<title>Networking | Emergente</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	</head>
-	<body class="gridBody">
-		<header	class="gridHeader">
-			
-			<nav class="menuPrincipal">
-				<ul class="menuDesplegablePrincipal">
-					<li id="imagenMenuDesplegable"><img src="imagenes/logoMenu.png" alt="Logo Menu Principal"></li><!--menu desplegable desde logo-->
+	<body>
+		<header	class="header">
+			<nav class="header__menu">
+				<ul>
+					<li><img src="imagenes/logoMenu.png" alt="Logo Menu Principal"></li><!--menu desplegable desde logo-->
 					<ul>
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="nosotros.html">NOSOTROS</a></li>
@@ -28,28 +32,24 @@
 					</ul>
 				</ul>	
 			</nav>
-			<div class="logoEmergente">
-				<img id="logoHeader" src="imagenes/logoEmergente.png" alt="Logo Emergente">	
-			</div>
-			<aside barraAccesos>
-				
-					
+			<img class="header__logo" src="imagenes/logoEmergente.png" alt="Logo Emergente">	
+			<aside class="header__accesos">
 					<a  href="login.html">
-						<img class="imagenesHeader" src="imagenes/logoLogin.png" alt="Logo Login" >
+						<img src="imagenes/logoLogin.png" alt="Logo Login" >
 					</a>
-				
-					<a  href="#footer"><img class="imagenesHeader" id="downArrow" src="imagenes/downarrow.png" alt="Footer"></a>
-				<form class="formularioSearch">
-					<label for="buscar"></label>
-					<button><img class="imagenesHeader" src="imagenes/logosearch.png" alt="Logo Search"></button>
-					<input id="buscar" type="text" placeholder="Buscar">
-				</form>	
+					<a  href="#footer">
+						<img class="img--efectoGiro" src="imagenes/downarrow.png" alt="Footer">
+					</a>
+					<form>
+						<label for="buscar"></label>
+						<button><img src="imagenes/logosearch.png" alt="Logo Search"></button>
+						<input id="buscar" type="text" placeholder="Buscar">
+					</form>	
 					
 			</aside>
 					</header>
 					<section class="gridServicioTecnico">
-						<h1>EMERGENTE</h1>
-						<h2>Networking</h2>
+						<h1>NETWORKING</h1>
 						<div class="servicioTecnico">
 							<div>
 								<h3>PC</h3>
@@ -64,7 +64,7 @@
 								</ul>	
 							</div>
 						<div>
-							<h3>Racks</h3>
+							<h3>Notebook</h3>
 							<img src="imagenes/fotoreparacionnotebook.png" alt="Notebook en arreglo">
 							<p>Se realiza servicio tecnico a equipos de sobremesa, tanto pc como AIO</p>
 							<ul>
@@ -141,62 +141,60 @@
 								</fieldset>	
 							</form>
 					</section>
-		<footer class="gridFooter" id="footer">
-			<nav >
-				<ul class="menuNavegacionFooter">
-					<li id="tituloMenuFooter">NAVEGACION</li>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="nosotros.html">NOSOTROS</a></li>
-					<li><a href="serviciotecnico.html">SERVICIO TECNICO</a></li>
-					<li><a href="networking.html">NETWORKING</a></li>
-					<li><a href="datarecovery.html">DATA RECOVERY</a></li>
-					<li><a href="consultoriait.html">CONSULTORIA IT</a></li>
-				</ul>
-			</nav>
-			<nav >
-				<ul class="menuContactoFooter">
-					<li id="tituloMenuFooter"><a href="contacto.html">CONTACTO</a></li>
-					<li>info@emergente.com.ar</li>
-					<li>+54 222 222222</li>
-					<li><a href="https://web.whatsapp.com/">+54 333 333333</a></li>
-					<li><a href="https://www.google.com.ar/maps/place/Monte+Everest/@27.9881199,86.9162203,15z/data=!3m1!4b1!4m5!3m4!1s0x39e854a215bd9ebd:0x576dcf806abbab2!8m2!3d27.9881206!4d86.9249751">Algun lugar 362</a></li>
-				</ul>		
-			</nav>
-			<nav >
-				<ul class="menuInfoFooter">
-					<li id="tituloMenuFooter">INFO</li>
-					<li><a href="privacidad.html">Politicas de privacidad</a></li>
-					<li><a href="pago.html">Informacion de pago</a></li>
-					<li><a href="faq.html">FAQ</a></li>
-				</ul>	
-			</nav>
-			<aside class="redesFooter">
-			<ul>
-				<li><a href="https://www.facebook.com/">
-			<img src="imagenes\logoFacebook.png" alt="Logo facebook">
-			</a></li>
-			<li>
-			<a href="https://www.instagram.com/">
-				<img src="imagenes\logoInstagram.png" alt="Logo Instagram">
-			</a>
-		</li>
-			<li><a href="https://www.twitter.com/">
-				<img src="imagenes\logoTwitter.png" alt="Logo Twitter">
-			</a></li>	
-			
-			</ul>	
-		</aside>
-			
-			
-			</footer>
-		<section class="gridDerechos">
-						<p>®2021 EMERGENTE Servicios Informaticos</p>
-						<a href="https://web.whatsapp.com/" >
-							<img src="imagenes\logoWhatsappcolor.png" alt="Logo Whatsapp" id="wsp">
-						</a>
-		</section>
-
-
+					<footer class="footer" id="footer">
+						<nav >
+							<ul class="footer__menu">
+								<li class="footer__menu--titulo">NAVEGACION</li>
+								<li><a href="index.html">HOME</a></li>
+								<li><a href="nosotros.html">NOSOTROS</a></li>
+								<li><a href="serviciotecnico.html">SERVICIO TECNICO</a></li>
+								<li><a href="networking.html">NETWORKING</a></li>
+								<li><a href="datarecovery.html">DATA RECOVERY</a></li>
+								<li><a href="consultoriait.html">CONSULTORIA IT</a></li>
+							</ul>
+						</nav>
+						<nav >
+							<ul class="footer__menu">
+								<li class="footer__menu--titulo"><a href="contacto.html">CONTACTO</a></li>
+								<li>info@emergente.com.ar</li>
+								<li>+54 222 222222</li>
+								<li><a href="https://web.whatsapp.com/">+54 333 333333</a></li>
+								<li><a href="https://www.google.com.ar/maps/place/Monte+Everest/@27.9881199,86.9162203,15z/data=!3m1!4b1!4m5!3m4!1s0x39e854a215bd9ebd:0x576dcf806abbab2!8m2!3d27.9881206!4d86.9249751">Algun lugar 362</a></li>
+							</ul>		
+						</nav>
+						<nav >
+							<ul class="footer__menu">
+								<li class="footer__menu--titulo">INFO</li>
+								<li><a href="privacidad.html">Politicas de privacidad</a></li>
+								<li><a href="pago.html">Informacion de pago</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+							</ul>	
+						</nav>
+						<aside >
+						<ul class="footer__redes">
+							<li><a href="https://www.facebook.com/">
+								<img src="imagenes\logoFacebook.png" alt="Logo facebook">
+							</a></li>
+							<li>
+							<a href="https://www.instagram.com/">
+							<img src="imagenes\logoInstagram.png" alt="Logo Instagram">
+							</a>
+							</li>
+							<li><a href="https://www.twitter.com/">
+							<img src="imagenes\logoTwitter.png" alt="Logo Twitter">
+							</a></li>	
+						
+						</ul>	
+						</aside>
+						
+						
+						</footer>
+						<section class="derechos">
+									<p>®2021 EMERGENTE Servicios Informaticos</p>
+									<a href="https://web.whatsapp.com/" >
+										<img src="imagenes\logoWhatsappcolor.png" alt="Logo Whatsapp" class="derechos__wsp">
+									</a>
+						</section>
 	</body>
 
 </html>
