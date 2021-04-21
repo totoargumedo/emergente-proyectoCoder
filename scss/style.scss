@@ -1,19 +1,110 @@
-$colorPrimario: #ffa630ff;
-$colorSecundario: #d7e8baff;
-$fuentes: #4da1a9ff;
-$colorTerciario: #2e5077ff;
-$rojoViejo: #611c35ff;
-$fuenteTitulo:'Montserrat', sans-serif;
-$fuenteLetra: 'Roboto', sans-serif;
-*{
-    margin: 0;
-    padding: 0;
+@import "color";
+@import "fuentes";
+@import "sizes";
+
+/* Basico Titulos y Texto */
+
+h1{
+    font-family: $fuenteIntro;
+    font-weight: 900;
+    font-size: 6em;
 }
-body{
+
+h2{
+    font-family: $fuenteTitulo;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+h3{
+    font-family: $fuenteTitulo;
+    font-weight: 700;
+    font-size: 2em;
+}
+p{
+    font-family: $fuenteLetra;
+    font-weight: 500;
+}
+
+/*Presentacion Index */
+
+.presentacion{
+    background-image: url("/imagenes/fondoPresentacion3.png");
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    height: $secciones;
+
+    .presentacion-titulos{
+        text-align: right;
+        padding: 10vh 15vw 5vh 10vw;
+        color: whitesmoke;
+    }
+    
+    .presentacion-logo{
+        width: 15vw;
+        margin-left: 50vw;
+    }
+    
+}
+
+/* Quienes Somos Index */
+
+.quienes{
+    color: $colorTitulo;
+    background-color: $colorSecundario;
+    margin: 0;
+    
+    .quienes-texto{
+        padding: 10vh 5vw;
+        text-align: justify;
+    }
+
+    h5{
+      font-size: 2em;  
+      font-family: $fuenteLetra;
+    }
+}
+
+/* Nuestros Servicios Index*/
+
+.servicios{
+    color: $colorTitulo;
+    background-color: $colorTerciario;
+    text-align: justify;
+    height: $secciones;
+
+    h2{
+        font-size: 2em;
+    }
+
+    .servicios-bloques{
+        padding: 5vh 2vw;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+     }
+
+}
+
+/* Historias Index */
+
+.historias {
+    height: $secciones;
+    background-color: $colorSecundario;
+
+    .historias-carousel{
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*body{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 12vh min(85vh) auto auto auto auto 3vh;
-}
+}*/
 .header{
     background-color: $colorPrimario;
     color: whitesmoke;
@@ -27,7 +118,6 @@ body{
     align-items: center;
     transition: all 1s;
     z-index: 3;
-    border-bottom: 1px solid whitesmoke;
 
     .header__logo{
         padding: 2vh;
@@ -223,11 +313,11 @@ body{
     }
     p{
         font: $fuenteLetra;
-        color: $rojoViejo;
+        color: $colorFuente;
     }
 }
 
-/*estilo sin modificar*/
+/*estilo sin modificar
 
 h3{
     color: #ff0000e1;
@@ -682,3 +772,4 @@ h2{
     display: none;
 }
 }
+*/
